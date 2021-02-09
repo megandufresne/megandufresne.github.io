@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>A-Frame - Image Textures</title>
+	<script src="js/aframe-master.1.0.4.min.js"></script>
+</head>
+
+<body>
+<a-scene antialias="true">
+	
+	<a-assets>
+		<img id="sky" src="images/galaxy.jpg" crossorigin="anonymous" />
+		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
+		<img id="tall_wood" src="images/tall_wood.jpeg" crossorigin="anonymous" />
+		<img id="water" src="images/water.jpg" crossorigin="anonymous" />
+        <img id="wood" src="images/wood2.jpg" crossorigin="anonymous" />
+		<img id="marble" src="images/marble.jpg" crossorigin="anonymous" />
+        <img id="bushes" src="images/bushes.jpg" crossorigin="anonymous" />
+	</a-assets>
+		
+	<a-sky 
+		color = "#FFFFFF"
+		material = "src: #sky">
+	</a-sky>
+
+	<a-plane
+		width="100" height="100"
+		position=" 0.00 0.00 0.00" 
+		rotation="-90 0 0" 
+		color="#888888" 
+		material="src: #grass; repeat:10 10; transparent: true; opacity: 0.75"
+		shadow="cast: false; receive: true">
+	</a-plane>
+	
+	<a-box
+		width = "7" height = ".5" depth = "7"
+		position = "3 0.20 -3"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #wood"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = "6.5" height = ".3" depth = "6.5"
+		position = "3 0.6 -3"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #wood"
+		shadow = "cast: true; receive: true">
+	</a-box>
+	
+	<a-sphere
+		radius = ".75"
+		position = "2 2 -2"
+		material = "src: #water"
+		shadow = "cast: true; receive: true">
+	</a-sphere>
+    
+    <a-cylinder
+		radius = ".65" height = "1"
+		position = "2 1 -2"
+		color = "#8888BB"
+		material = "src: #marble"
+		shadow = "cast: true; receive: true">
+	</a-cylinder>
+	
+	<a-cylinder
+		radius = "0.25" height = "6.5"
+		position = "7 2 -3"
+		color = "#8888BB"
+		material = "src: #tall_wood"
+		shadow = "cast: true; receive: true">
+	</a-cylinder>
+    
+    <a-cylinder
+		radius = "0.25" height = "6.5"
+		position = "-1 2 -3"
+		color = "#8888BB"
+		material = "src: #tall_wood"
+		shadow = "cast: true; receive: true">
+	</a-cylinder>
+    
+    <a-cylinder
+		radius = "0.25" height = "6.5"
+		position = "3 2 1"
+		color = "#8888BB"
+		material = "src: #tall_wood"
+		shadow = "cast: true; receive: true">
+	</a-cylinder>
+    
+    <a-cylinder
+		radius = "0.25" height = "6.5"
+		position = "3 2 -7"
+		color = "#8888BB"
+		material = "src: #tall_wood"
+		shadow = "cast: true; receive: true">
+	</a-cylinder>
+    
+    <a-box
+		width = "6.5" height = ".3" depth = "6.5"
+		position = "3 5 -3"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #wood"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = "9" height = "3" depth = "1"
+		position = "-.80 1.5 -6"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #bushes"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = "9" height = "3" depth = "1"
+		position = "7 1.5 -.5"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #bushes"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    
+    
+    
+    
+    
+    
+    
+	
+</a-scene>
+</body>
+</html>
