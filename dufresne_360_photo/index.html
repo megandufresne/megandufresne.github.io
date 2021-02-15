@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+        <title>DuFresne's VR Space</title>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    </head>
+
+        <body>
+            <a-scene antialias="true">
+
+            <a-assets>
+                <img id="resort" src="images/resort.jpg" crossorigin="anonymous" />
+                <img id="deck" src="images/deck.jpg" crossorigin="anonymous" />
+                <img id="statue" src="images/statue.jpg" crossorigin="anonymous" />
+                <img id="mine" src="images/mine.jpg" crossorigin="anonymous" />
+
+            </a-assets>
+
+            <a-sky 
+                color = "#FFFFFF"
+                material = "src: #mine">
+            </a-sky>
+
+    
+
+            <a-sphere
+                radius = ".75"
+                position = "-1 2 -4"
+                material = "src: #resort"
+                shadow = "cast: true; receive: true"
+                event-set__enter="_event: mouseenter; _target: a-sky; material.src: #resort">    
+
+            </a-sphere>
+
+            <a-sphere
+                radius = ".75"
+                position = "5 2 -3"
+                material = "src: #deck"
+                shadow = "cast: true; receive: true"
+                event-set__enter="_event: mouseenter; _target: a-sky; material.src: #deck">
+            </a-sphere>
+
+            <a-sphere
+                radius = ".75"
+                position = "-4 2 -4"
+                material = "src: #statue"
+                shadow = "cast: true; receive: true"
+                event-set__enter="_event: mouseenter; _target: a-sky; material.src: #statue">
+            </a-sphere>
+
+            <a-sphere
+                radius = ".75"
+                position = "2 2 -4"
+                material = "src: #mine"
+                shadow = "cast: true; receive: true"
+                event-set__enter="_event: mouseenter; _target: a-sky; material.src: #mine">
+            </a-sphere>
+
+
+
+
+        </a-scene>
+    </body>
+</html>
